@@ -1,0 +1,38 @@
+// menu.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main ()
+{ 
+	float costo=0;
+	int opcion,cantidad;
+	cout<<"ingrese la cantidad:"<<endl;
+	cin>> cantidad;
+	cout<<"selecione su pedido:"<<endl;
+	cout<< "-----MENU-----"<<endl;
+	cout<< "1.hamburguesas"<<endl;
+	cout<<"2.hamburguesas con queso"<<endl;
+	cout<<"3.papas fritas"<<endl;
+	cout<<"4.soda"<<endl;
+	cout<<"ingrese la opcion:"<<endl;
+	cin>>opcion;
+	switch (opcion)
+	{
+	case 1: costo=3;break;
+	case 2: costo=5;break;
+	case 3: costo=2;break;
+	case 4: costo=2.5;break;
+	default:cout<< "opcion invalida:"<<endl;
+	}
+	cout<<"el costo es:"<<costo*cantidad;
+	getch();
+}
+
+
+Integrantes: 
+Juan Pablo Galvis
+Fabiana Padilla Frey
+Ronmel Tejerina 
+Victor Cordero El Hage 
